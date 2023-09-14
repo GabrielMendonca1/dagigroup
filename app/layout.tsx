@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Archivo_Black } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const archivo = Archivo_Black({  weight: "400",
+subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: 'DAGI',
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={archivo.className}>{children}</body>
     </html>
   )
 }

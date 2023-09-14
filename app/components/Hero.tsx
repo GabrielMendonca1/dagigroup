@@ -2,24 +2,26 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="flex flex-row mt-12px ">
-      {/* Logo à esquerda */}
-      <div className="flex-2 relative">
+    <section className="relative flex items-center mt-12px h-600px">
+      
+      {/* Logo à direita */}
+      <div className="right-0 w-1/2 h-1/2 overflow-hidden">
         <Image
           src={'/moon.jpg'}
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+          className="object-cover dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           alt="Dagi Logo"
+          layout="responsive"
           width={800}
-          height={300}
-          objectFit="cover"
+          height={600}
           priority
         />
       </div>
-      {/* Lista à direita */}
-      <div className="flex-1 flex flex-col justify-center items-start pr-24 space-y-4">
-        <h2 className="text-8xl font-semibold mb-6">Dream</h2>
-        <h2 className="text-8xl font-semibold mb-6">Act</h2>
-        <h2 className="text-8xl font-semibold">Get It!</h2>
+      
+      {/* Lista overlaid on image */}
+      <div className="z-10 flex flex-col space-y-4 absolute inset-x-0 m-auto left-2/4">
+        <h2 className="text-9xl font-semibold text-black dark:text-white mb-6">Dream</h2>
+        <h2 className="text-9xl font-semibold text-black dark:text-white mb-6 ml-12">Act</h2>
+        <h2 className="text-9xl font-semibold text-black dark:text-white ml-24">Get It!</h2>
       </div>
     </section>
   );

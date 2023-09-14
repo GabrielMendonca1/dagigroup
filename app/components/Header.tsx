@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className=" ml-10px flex justify-between items-center p-4 ">
       <div>
-        <Image src="/logo.svg"  className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert" alt="Your Logo" width={70} height={70} />
+        <Image src="/logo.svg"  className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert" alt="Your Logo" width={50} height={50} />
       </div>
       <nav className="hidden md:block">
         <ul className="flex gap-4">
