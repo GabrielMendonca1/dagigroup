@@ -20,8 +20,8 @@ export default function Hero() {
       {/* Lista overlaid on image */}
       <div className="z-10 flex flex-col space-y-4 absolute inset-x-0 m-auto left-2/4">
         <h2 className="text-9xl font-semibold text-black dark:text-white mb-6">Dream</h2>
-        <h2 className="text-9xl font-semibold text-black dark:text-white mb-6 ml-18">Act</h2>
-        <h2 className="text-9xl font-semibold text-black dark:text-white ml-30">Get It!</h2>
+        <h2 className="text-9xl font-semibold text-black dark:text-white mb-6 ml-12">Act</h2>
+        <h2 className="text-9xl font-semibold text-black dark:text-white ml-24">Get It!</h2>
       </div>
     </section>
   );
