@@ -2,27 +2,33 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative flex items-center mt-12px h-600px">
-      
-      {/* Logo à direita */}
-      <div className="right-0 w-1/2 h-1/2 overflow-hidden">
+    <section className="relative flex flex-col md:flex-row items-center h-screen">
+      {/* Imagem */}
+      <div className="absolute w-full lg:w-1/2  h-full dark:invert">
         <Image
-          src={'/dall1.png'}
-          className="object-cover dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+          src={'/dall1.jpg'}
+          className="object-cover"
           alt="Dagi Logo"
-          layout="responsive"
-          width={800}
-          height={600}
-          priority
+          layout="fill"
+          objectFit="cover"
+          quality={100}
         />
       </div>
-      
-      {/* Lista overlaid on image */}
-      <div className="z-10 flex flex-col space-y-4 absolute inset-x-0 m-auto left-2/4">
-        <h2 className="text-9xl font-semibold text-black dark:text-white mb-6">Dream</h2>
-        <h2 className="text-9xl font-semibold text-black dark:text-white mb-6 ml-12">Act</h2>
-        <h2 className="text-9xl font-semibold text-black dark:text-white ml-24">Get It!</h2>
+
+      {/* Texto centralizado e sobreposto à imagem */}
+      <div className="z-10 flex flex-col items-center justify-center w-full h-full text-center lg:text-left space-y-8 lg:mt-10 ">
+        <ul>
+          <li className="ml-0 lg:ml-14">
+            <h2 className="text-8xl lg:text-9xl font-semibold text-black dark:text-white">Dream</h2>
+          </li>
+          <li className="ml-0 lg:ml-28">
+            <h2 className="text-8xl lg:text-9xl font-semibold text-black dark:text-white">Act</h2>
+          </li>
+          <li className="ml-0 lg:ml-24">
+            <h2 className="text-8xl lg:text-9xl font-semibold text-black dark:text-white">Get It!</h2>
+          </li>
+        </ul>
       </div>
-    </section>
+  </section>
   );
 }
