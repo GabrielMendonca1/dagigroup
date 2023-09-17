@@ -1,18 +1,17 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import TextHero from './components/TextHero';
-import Footer from './components/Footer';
-import ImgHero from './components/ImgHero';
-import ListaHero from './components/ListaHero';
+import Header from './components/molecules/Header';
+import Hero from './components/molecules/Hero';
+import Text from './components/molecules/Text';
+import Footer from './components/molecules/Footer';
+import ImgGroup from './components/molecules/ImgGroup';
+
 
 export default function Home() {
   return (
     <main className="flex flex-col">
       <Header />
       <Hero />
-      <TextHero />
-      <ImgHero />
-      <ListaHero />
+      <Text />
+      <ImgGroup />
       <Footer />
     </main>
   );

@@ -1,4 +1,4 @@
-export default function TextHero() {
+export default function Text() {
     return (
       <section className="flex flex-col items-center mt-24 md:mt-24 mb-16 md:mb-32">
         <div className="flex flex-col items-center w-full md:w-2/3 px-4">
