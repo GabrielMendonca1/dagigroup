@@ -17,7 +17,19 @@ const MobileMenu = () => {
     <div className="md:hidden pb-4 relative z-20">
       <div className={`group rounded-lg px-5 py-4 transition-all ${menuState.menuOpen ? 'w-2/3 h-2/5 fixed top-1 right-1 bg-white dark:bg-black' : ''}`}>
         <button onClick={toggleMenu} className="absolute top-4 right-4">
-          {menuState.menuOpen ? <Image src="/close.svg" alt="Fechar" width={40} height={40} /> : <Image src="/open.svg" alt="Abrir" width={20} height={20} />}
+          {menuState.menuOpen ? 
+            <Image src="/close.svg" alt="Fechar" width={40} height={40} /> 
+            : (
+              <>
+                <div className="dark:hidden">
+                  <Image src="/open.svg" alt="Abrir" width={20} height={20} />
+                </div>
+                <div className="hidden dark:block">
+                  <Image src="/open-dark.svg" alt="Abrir" width={20} height={20} />
+                </div>
+              </>
+            )
+          }
         </button>
         {menuState.menuOpen && (
           <ul className="flex flex-col items-center justify-center h-full gap-6 p-4">
