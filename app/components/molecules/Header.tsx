@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import MobileMenu from './MobileMenu';
+import MobileMenu from '../atoms/MobileMenu';
 
 export default function Header() {
   return (
@@ -9,7 +9,7 @@ export default function Header() {
       </div>
       <nav className="hidden md:block">
         <ul className="flex gap-4">
-          <li><a href="#" className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">Home</a></li>
+          <li><a href="#home" className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">Home</a></li>
           <li><a href="#sobre" className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">Sobre</a></li>
           <li><a href="#" className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">Serviços</a></li>
           <li><a href="#" className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">Contato</a></li>
