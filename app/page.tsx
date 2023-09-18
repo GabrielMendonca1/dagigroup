@@ -10,7 +10,9 @@ export default function Home() {
     <main className="flex flex-col">
       <Header />
       <Hero />
+      <div id="sobre">
       <Text />
+      </div>
       <ImgGroup />
       <Footer />
     </main>
