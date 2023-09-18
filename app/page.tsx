@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <Header />
+      <div id="home">
       <Hero />
+      </div>
       <div id="sobre">
       <Text />
       </div>

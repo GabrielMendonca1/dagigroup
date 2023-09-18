@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import MobileMenu from './MobileMenu';
 
 export default function Header() {
   return (
@@ -14,9 +15,9 @@ export default function Header() {
           <li><a href="#" className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">Contato</a></li>
         </ul>
       </nav>
-      <div className="md:hidden">
-        <button className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">Menu</button>
-      </div>
+      
+      <MobileMenu />
+    
     </header>
   );
 }
