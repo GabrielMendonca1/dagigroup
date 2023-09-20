@@ -7,7 +7,7 @@ import ImgGroup from './components/molecules/ImgGroup';
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col pb-24">
       <Header />
       <div id="home">
       <Hero />
@@ -15,7 +15,9 @@ export default function Home() {
       <div id="sobre">
       <Text />
       </div>
+      <div id="servicos">
       <ImgGroup />
+      </div>
       <Footer />
     </main>
   );
