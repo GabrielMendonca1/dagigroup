@@ -3,7 +3,7 @@ import MobileMenu from '../atoms/MobileMenu';
 
 export default function Header() {
   return (
-    <header className="bg-white dark:bg-black sticky top-0 z-20 flex justify-between items-center p-4">
+    <header className="bg-white dark:bg-black sticky top-0 z-30 flex justify-between items-center p-4">
       <div>
         <Image src="/logo.svg"  className="relative" alt="Your Logo" width={50} height={50} />
       </div>
