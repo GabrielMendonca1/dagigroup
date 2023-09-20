@@ -7,7 +7,7 @@ import ImgGroup from './components/molecules/ImgGroup';
 
 export default function Home() {
   return (
-    <main className="flex flex-col pb-24">
+    <main className="flex flex-col pb-24 overflow-y-hidden">
       <Header />
       <div id="home">
       <Hero />

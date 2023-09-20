@@ -11,6 +11,7 @@ import Image from 'next/image';
         objectFit="cover"
         quality={100}
         priority={true}
+        sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1280px"
       />
     </div>
 );}

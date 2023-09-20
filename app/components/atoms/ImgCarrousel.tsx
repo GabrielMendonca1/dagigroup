@@ -18,7 +18,7 @@ const ImgCarrousel = () => {
 }
 
 const renderImage = (src: string, alt: string) => (
-    <div className="relative group hover:bg-gray-700 hover:bg-opacity-50 rounded-lg shadow-lg">
+    <div className="relative group rounded-lg shadow-lg">
         <img src={src} alt={alt} className="rounded-lg object-cover object-center h-screen md:border md:border-gray-300 md:shadow-md" />
         <div className="hidden lg:block absolute inset-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <span className="text-red-500 font-bold justify-center">{alt}</span>
