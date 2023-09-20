@@ -17,7 +17,7 @@ const MobileMenu = () => {
     <div className="md:hidden pb-4 relative z-30">
       <div className={`group rounded-lg px-5 py-4 ${menuState.menuOpen ? 'w-[80%] h-[50%] max-w-[400px] max-h-[300px] fixed top-0 right-0 bg-white dark:bg-black border dark:border-gray-700 shadow-md' : 'max-w-full max-h-full'}`}>
         <button onClick={toggleMenu} aria-expanded={menuState.menuOpen} className="absolute top-4 right-4">
-          {menuState.menuOpen ? <Image src="/close.svg" alt="Fechar" width={40} height={40} className="w-[40px] h-[auto]" /> : <Image src="/open.svg" alt="Abrir" width={20} height={20} className="w-[20px] h-auto"/>}
+          {menuState.menuOpen ? <Image src="/close.svg" alt="Fechar" width={20} height={20} className="w-[20px] h-[auto]" /> : <Image src="/open.svg" alt="Abrir" width={20} height={20} className="w-[20px] h-auto"/>}
         </button>
         {menuState.menuOpen && (
           <ul className="flex flex-col items-center justify-center h-full gap-6 p-4 overflow-y-auto">
