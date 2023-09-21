@@ -1,14 +1,16 @@
-import Header from './components/molecules/Header';
+
 import Hero from './components/molecules/Hero';
 import Text from './components/molecules/Text';
 import Footer from './components/molecules/Footer';
 import ImgGroup from './components/molecules/ImgGroup';
+import HeaderWrapper from './components/molecules/HeaderWrapper';
 
 
 export default function Home() {
   return (
     <main className="flex flex-col pb-24 overflow-y-hidden">
-      <Header />
+      
+      <HeaderWrapper />
       <div id="home">
       <Hero />
       </div>

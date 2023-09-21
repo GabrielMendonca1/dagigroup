@@ -1,18 +1,16 @@
-import Image from 'next/image';
-
- const MainIMG = () => {
+// MainIMG.tsx
+const MainIMG = () => {
   return (
-    <div className="absolute w-full lg:w-1/2 h-full dark:invert">
-      <Image
-        src={'/dall1.jpg'}
-        className="object-cover w-auto h-auto"
-        alt="Dagi Logo"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-        priority={true}
-        sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1280px"
-      />
+    <div className="absolute w-full h-full">
+      <video
+        className="object-cover w-full h-screen"
+        autoPlay
+        loop
+        muted
+      >
+        <source src="video/template.mp4" type="video/mp4" />
+      </video>
     </div>
-);}
+  );
+};
 export default MainIMG;
