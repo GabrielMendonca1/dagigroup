@@ -8,7 +8,7 @@ const MainIMG = () => {
         loop
         muted
       >
-        <source src="video/template.mp4" type="video/mp4" />
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
       </video>
     </div>
   );
