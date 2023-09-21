@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Logo from '../atoms/Logo';
 import NavLinks from '../atoms/NavLinks';
 import MobileMenu from '../atoms/MobileMenu';
-
+//header wrapper
 export default function HeaderWrapper() {
   const [isScrolled, setIsScrolled] = useState(false);
 
