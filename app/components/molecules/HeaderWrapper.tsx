@@ -21,7 +21,7 @@ export default function HeaderWrapper() {
   const headerClass = isScrolled ? 'bg-white' : 'bg-transparent';
 
   return (
-    <header className={`fixed top-0 z-50 flex items-center justify-between w-full p-4 transition-all ${headerClass}`}>
+    <header className={`fixed top-0 z-50 flex items-center justify-between w-full p-6 transition-all ${headerClass}`}>
       <div className="flex items-center">
         <Logo />
       </div>
