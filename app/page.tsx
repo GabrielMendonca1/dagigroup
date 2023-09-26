@@ -8,7 +8,7 @@ import HeaderWrapper from './components/molecules/HeaderWrapper';
 
 export default function Home() {
   return (
-    <main className="flex flex-col pb-24 overflow-y-hidden">
+    <main className="flex flex-col overflow-y-hidden">
       
       <HeaderWrapper />
       <div id="home">

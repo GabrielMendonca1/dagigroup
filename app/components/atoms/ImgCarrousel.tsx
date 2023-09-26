@@ -1,6 +1,6 @@
 const ImgCarrousel = () => {
     return (
-      <section className="mt-18 py-12 bg-white dark:bg-black flex flex-col md:flex-row">
+      <section className="py-8 md:py-12 bg-white dark:bg-black flex flex-col md:flex-row">
         <div className="container mx-auto px-4 flex flex-col md:flex-row">
           <div className="w-full md:h-[90%] flex items-center justify-center">
             <img 
