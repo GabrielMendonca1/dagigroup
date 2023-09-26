@@ -7,6 +7,8 @@ const MainIMG = () => {
         autoPlay
         loop
         muted
+        pointer-events="none"
+        playsInline
         
       >
         <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
