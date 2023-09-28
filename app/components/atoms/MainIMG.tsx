@@ -7,7 +7,6 @@ const MainIMG = () => {
         autoPlay
         loop
         muted
-        pointer-events="none"
         playsInline
         
       >
