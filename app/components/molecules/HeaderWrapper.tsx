@@ -21,7 +21,7 @@ export default function HeaderWrapper() {
   const headerClass = isScrolled ? 'bg-white' : 'bg-transparent';
   const headerBlack = isScrolled ? 'dark:bg-black' : ' dark:bg-transparent';
   return (
-    <header className={`fixed top-0 z-50 flex items-center justify-between w-full p-6 transition-all ${headerClass} ${headerBlack}`}>
+    <header className={`fixed top-0 z-50 flex items-center justify-between w-full p-2 px-2 transition-all ${headerClass} ${headerBlack}`}>
       <div className="flex items-center">
         <Logo />
       </div>
