@@ -11,7 +11,7 @@ const MobileMenu = () => {
   return (
     <div className="relative z-50">
       {/* Menu Button */}
-      <button onClick={toggleMenu} aria-expanded={menuOpen} className="pt-4 pr-4 fixed top-4 right-4 z-40">
+      <button onClick={toggleMenu} aria-expanded={menuOpen} className="fixed top-2 right-4 z-40 ">
         {menuOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
